@@ -1,8 +1,3 @@
-Dự án này đã lưu trữ vì FormAPI đã được cập nhập lên API 4.0.0\
-Vui lòng sử dụng FormAPI mới tại: https://github.com/jojoe77777/FormAPI
-
----
-
 # FormAPI
 
 Simple API for creating forms for MCPE clients (PocketMine only)
