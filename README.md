@@ -34,4 +34,4 @@ The [Build workflow](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflo
 
 ## Credits and license
 
-This fork retains the `jojoe77777\FormAPI` namespace and upstream attribution. The original project is [jojoe77777/FormAPI](https://github.com/jojoe77777/FormAPI). The license text is in [LICENSE](LICENSE), under LGPL-3.0. Upstream source changes through commit `ad0c9631b12fc37e8d9c39436d639058046b9dab` were merged before this Axolotl-PM 5 maintenance release.
+This fork retains the `jojoe77777\FormAPI` namespace and upstream attribution. The original project is [jojoe77777/FormAPI](https://github.com/jojoe77777/FormAPI). The unchanged license text is in [LICENSE](LICENSE). Composer uses the current SPDX identifier `LGPL-3.0-only` for the original `LGPL-3.0` declaration. Upstream source changes through commit `ad0c9631b12fc37e8d9c39436d639058046b9dab` were merged before this Axolotl-PM 5 maintenance release.
