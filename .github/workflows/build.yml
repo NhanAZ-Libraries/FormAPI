@@ -1,4 +1,4 @@
-name: Build
+name: Build and validate FormAPI plugin
 
 on:
   push:
