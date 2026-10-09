@@ -8,32 +8,17 @@ use pocketmine\plugin\PluginBase;
 
 class FormAPI extends PluginBase{
 
-    /**
-     * @deprecated
-     *
-     * @param callable|null $function
-     * @return CustomForm
-     */
+    /** @deprecated Use new CustomForm($callback). */
     public function createCustomForm(?callable $function = null) : CustomForm {
         return new CustomForm($function);
     }
 
-    /**
-     * @deprecated
-     *
-     * @param callable|null $function
-     * @return SimpleForm
-     */
+    /** @deprecated Use new SimpleForm($callback). */
     public function createSimpleForm(?callable $function = null) : SimpleForm {
         return new SimpleForm($function);
     }
 
-    /**
-     * @deprecated
-     *
-     * @param callable|null $function
-     * @return ModalForm
-     */
+    /** @deprecated Use new ModalForm($callback). */
     public function createModalForm(?callable $function = null) : ModalForm {
         return new ModalForm($function);
     }

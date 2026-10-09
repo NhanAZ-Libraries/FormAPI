@@ -4,13 +4,14 @@ declare(strict_types = 1);
 
 namespace jojoe77777\FormAPI;
 
+use InvalidArgumentException;
 use pocketmine\form\Form as IForm;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 abstract class Form implements IForm{
 
-    /** @var array */
-    protected $data = [];
+    /** @var array<string, mixed> */
+    protected array $data = [];
     /** @var callable|null */
     private $callable;
 
@@ -22,10 +23,10 @@ abstract class Form implements IForm{
     }
 
     /**
+     * @param Player $player
+     * @throws InvalidArgumentException
      * @deprecated
      * @see Player::sendForm()
-     *
-     * @param Player $player
      */
     public function sendToPlayer(Player $player) : void {
         $player->sendForm($this);
@@ -35,11 +36,11 @@ abstract class Form implements IForm{
         return $this->callable;
     }
 
-    public function setCallable(?callable $callable) {
+    public function setCallable(?callable $callable) : void {
         $this->callable = $callable;
     }
 
-    public function handleResponse(Player $player, $data) : void {
+    public function handleResponse(Player $player, mixed $data) : void {
         $this->processData($data);
         $callable = $this->getCallable();
         if($callable !== null) {
@@ -47,10 +48,11 @@ abstract class Form implements IForm{
         }
     }
 
-    public function processData(&$data) : void {
+    public function processData(mixed &$data) : void {
     }
 
-    public function jsonSerialize(){
+    /** @return array<string, mixed> */
+    public function jsonSerialize() : array {
         return $this->data;
     }
 }

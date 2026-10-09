@@ -1,11 +1,38 @@
 {
     "name": "jojoe77777/libformapi",
-    "description": "Simple API for creating forms for MCPE clients (PocketMine only)",
+    "description": "Form API and response validation for Axolotl-PM plugins",
     "type": "library",
     "license": "LGPL-3.0",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "axolotl-pm/pocketmine-mp": "5.49.1",
+        "phpstan/phpstan": "^2.3"
+    },
     "autoload": {
         "psr-4": {
-            "jojoe77777\\FormAPI\\": "src/jojoe77777/FormAPI"
+            "jojoe77777\\FormAPI\\": "src/jojoe77777/FormAPI/"
         }
+    },
+    "config": {
+        "allow-plugins": false,
+        "platform": {
+            "php": "8.1.0"
+        },
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/axolotl-pm/PocketMine-MP",
+            "no-api": true
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse --level=max --no-progress src tests",
+        "test": "@php tests/forms.php"
     }
 }

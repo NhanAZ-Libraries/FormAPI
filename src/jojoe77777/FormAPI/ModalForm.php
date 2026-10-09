@@ -4,10 +4,15 @@ declare(strict_types = 1);
 
 namespace jojoe77777\FormAPI;
 
+use pocketmine\form\FormValidationException;
+
 class ModalForm extends Form {
 
     /** @var string */
-    private $content = "";
+    private string $content = "";
+    private string $title = "";
+    private string $button1 = "";
+    private string $button2 = "";
 
     /**
      * @param callable|null $callable
@@ -21,59 +26,77 @@ class ModalForm extends Form {
         $this->data["button2"] = "";
     }
 
+    public function processData(mixed &$data) : void {
+        if($data !== null && !is_bool($data)) {
+            throw new FormValidationException("Expected a boolean response, got " . gettype($data));
+        }
+    }
+
     /**
      * @param string $title
+     * @return $this
      */
-    public function setTitle(string $title) : void {
+    public function setTitle(string $title) : self {
+        $this->title = $title;
         $this->data["title"] = $title;
+        return $this;
     }
 
     /**
      * @return string
      */
     public function getTitle() : string {
-        return $this->data["title"];
+        return $this->title;
     }
 
     /**
      * @return string
      */
     public function getContent() : string {
-        return $this->data["content"];
+        return $this->content;
     }
 
     /**
      * @param string $content
+     * @return $this
      */
-    public function setContent(string $content) : void {
+    public function setContent(string $content) : self {
+        $this->content = $content;
         $this->data["content"] = $content;
+        return $this;
     }
 
     /**
      * @param string $text
+     * @return $this
      */
-    public function setButton1(string $text) : void {
+    public function setButton1(string $text) : self {
+        $this->button1 = $text;
         $this->data["button1"] = $text;
+        return $this;
     }
 
     /**
      * @return string
      */
     public function getButton1() : string {
-        return $this->data["button1"];
+        return $this->button1;
     }
 
     /**
      * @param string $text
+     * @return $this
      */
-    public function setButton2(string $text) : void {
+    public function setButton2(string $text) : self {
+        $this->button2 = $text;
         $this->data["button2"] = $text;
+        return $this;
     }
 
     /**
      * @return string
      */
     public function getButton2() : string {
-        return $this->data["button2"];
+        return $this->button2;
     }
 }
