@@ -90,7 +90,7 @@ jobs:
           cp "$BUILD_METADATA" build/devtools-build.json
 
       - name: Upload verified PHAR
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: FormAPI-${{ github.sha }}
           path: |
