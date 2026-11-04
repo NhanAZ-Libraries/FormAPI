@@ -1,6 +1,15 @@
 # FormAPI
 
-FormAPI provides simple, modal, and custom forms for Axolotl-PM plugins. The forms validate client responses before invoking the plugin callback.
+Form API with validated responses for Axolotl-PM plugins
+
+[![CI](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Libraries/FormAPI)](https://github.com/NhanAZ-Libraries/FormAPI/releases/latest)
+[![License](https://img.shields.io/github/license/NhanAZ-Libraries/FormAPI)](https://github.com/NhanAZ-Libraries/FormAPI/blob/master/LICENSE)
+[![Discord](https://img.shields.io/discord/986553214889517088?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/j2X83ujT6c)
+
+## Overview
+
+This library targets the PocketMine-MP and Axolotl-PM API 5 ecosystem and is maintained under [NhanAZ-Libraries](https://github.com/NhanAZ-Libraries).
 
 ## Compatibility
 
