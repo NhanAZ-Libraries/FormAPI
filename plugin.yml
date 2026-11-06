@@ -3,5 +3,6 @@ main: jojoe77777\FormAPI\FormAPI
 version: 3.0.0
 api: 5.0.0
 author: jojoe77777
+authors: [AxolotlBucketLabs]
 description: Forms and validated responses for Axolotl-PM plugins
-website: https://github.com/NhanAZ-Libraries/FormAPI
+website: https://github.com/AxolotlBucketLabs/FormAPI

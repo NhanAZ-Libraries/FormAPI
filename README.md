@@ -2,15 +2,15 @@
 
 Form API with validated responses for Axolotl-PM plugins
 
-[![CI](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml)
-[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Libraries/FormAPI)](https://github.com/NhanAZ-Libraries/FormAPI/releases/latest)
-[![License](https://img.shields.io/github/license/NhanAZ-Libraries/FormAPI)](https://github.com/NhanAZ-Libraries/FormAPI/blob/master/LICENSE)
+[![CI](https://github.com/AxolotlBucketLabs/FormAPI/actions/workflows/build.yml/badge.svg)](https://github.com/AxolotlBucketLabs/FormAPI/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/AxolotlBucketLabs/FormAPI)](https://github.com/AxolotlBucketLabs/FormAPI/releases/latest)
+[![License](https://img.shields.io/github/license/AxolotlBucketLabs/FormAPI)](https://github.com/AxolotlBucketLabs/FormAPI/blob/master/LICENSE)
 [![Discord](https://img.shields.io/discord/986553214889517088?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/j2X83ujT6c)
 
 
 ## Compatibility
 
-Version 3 targets the Axolotl-PM 5 API and requires PHP 8.1 or newer. The manifest declares API `5.0.0`. Compatibility testing uses a pinned server version in [Build](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml). Other Axolotl-PM 5 releases have not all been tested.
+Version 3 targets the Axolotl-PM 5 API and requires PHP 8.1 or newer. The manifest declares API `5.0.0`. Compatibility testing uses a pinned server version in [Build](https://github.com/AxolotlBucketLabs/FormAPI/actions/workflows/build.yml). Other Axolotl-PM 5 releases have not all been tested.
 
 ## Installation
 
@@ -36,7 +36,7 @@ $player->sendForm($form);
 
 ## Build and development
 
-The [Build workflow](https://github.com/NhanAZ-Libraries/FormAPI/actions/workflows/build.yml) runs PHPStan at level max, response tests, and the pinned [DevTools](https://github.com/NhanAZ/DevTools) build. The release PHAR is verified before publication. Source users can run `composer install`, `composer phpstan`, and `composer test` with the pinned development dependencies.
+The [Build workflow](https://github.com/AxolotlBucketLabs/FormAPI/actions/workflows/build.yml) runs PHPStan at level max, response tests, and the pinned [DevTools](https://github.com/AxolotlBucketLabs/DevTools) build. The release PHAR is verified before publication. Source users can run `composer install`, `composer phpstan`, and `composer test` with the pinned development dependencies.
 
 ## Credits and license
 

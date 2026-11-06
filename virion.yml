@@ -1,5 +1,6 @@
 name: libFormAPI
 author: jojoe77777
+authors: [AxolotlBucketLabs]
 api: 5.0.0
 version: 3.0.0
 antigen: jojoe77777\FormAPI
